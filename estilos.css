@@ -1,0 +1,122 @@
+* { box-sizing: border-box; }
+
+body {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+}
+
+header { 
+  border-bottom: 2px solid #222222; 
+  padding-bottom: 10px;
+}
+
+h1 { 
+  font-size: 26px; 
+  margin: 0 0 5px 0;
+}
+
+h2 { 
+  margin-top: 0; 
+  font-size: 18px; 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#estado { 
+  min-height: 24px; 
+  color: #777777; 
+  font-size: 14px;
+}
+
+main { 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 25px; 
+  margin-top: 20px;
+}
+
+section { 
+  flex: 1; 
+  min-width: 0; 
+  overflow-x: auto; 
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+th, td { 
+  padding: 14px 8px; 
+  border-bottom: 1px solid #eeeeee; 
+  text-align: left; 
+}
+
+th { 
+  font-size: 13px; 
+  color: #555555;
+  border-bottom: 2px solid #ccc;
+}
+
+small { 
+  display: block; 
+  margin-top: 4px; 
+  color: #888888; 
+}
+
+.cantidad { white-space: nowrap; }
+
+button { 
+  width: 28px; 
+  height: 28px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  background: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+button:hover {
+  background: #e9e9e9;
+}
+
+input { 
+  width: 44px; 
+  padding: 5px 2px; 
+  text-align: center; 
+  border: 1px solid #cccccc;
+}
+
+.precio, .subtotal { white-space: nowrap; }
+
+aside { 
+  width: 280px; 
+  padding: 20px; 
+  background: #eef2f5; 
+  border-left: 3px solid #333333;
+}
+
+ul { 
+  padding: 0; 
+  list-style: none; 
+  margin: 0;
+}
+
+li { 
+  margin: 12px 0; 
+}
+
+.total { 
+  display: flex; 
+  justify-content: space-between; 
+  border-top: 2px dashed #bbbbbb; 
+  padding-top: 15px; 
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  main { flex-direction: column; }
+  section, aside { width: 100%; }
+}

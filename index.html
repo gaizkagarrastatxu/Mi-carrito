@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Componentes PC</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><h1>Componentes PC</h1></header>
+
+  <p id="estado" role="status">Cargando...</p>
+
+  <main>
+    <section aria-label="Productos disponibles">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="productos"></tbody>
+      </table>
+    </section>
+
+    <aside>
+      <h2>Tu carrito</h2>
+      <ul id="resumen"></ul>
+      <p class="total">TOTAL <strong id="total">0.00 €</strong></p>
+    </aside>
+  </main>
+</body>
+</html>
